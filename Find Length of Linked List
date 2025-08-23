@@ -1,0 +1,26 @@
+Find Length of Linked List
+
+Examples :
+
+Input: head : 1->2->3->4->5
+
+Output: 5
+Explanation: Length of the linked list is 5, as there 
+are 5 nodes present in it.
+
+
+sol/
+
+class Solution {
+    public int getCount(Node head) {
+        int count = 0;
+        Node temp = head;
+
+        while (temp != null) {   
+            count++;             
+            temp = temp.next;    
+        }
+
+        return count;
+    }
+}
