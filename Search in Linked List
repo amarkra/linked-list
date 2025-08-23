@@ -1,0 +1,28 @@
+Search in Linked List
+
+Example:
+
+Input: n = 4, key = 3
+1->2->3->4
+Output: true
+Explanation: 3 is present in Linked List, so the function returns true.
+
+sol/
+
+class Solution {
+    static boolean searchKey(int n, Node head, int key) {
+        // Code here
+        if(head == null)
+        return false;
+        int idx = 0;
+        Node curr = head;
+        while(curr != null){
+            if(curr.data == key){
+                idx++;
+                return true;
+            }
+            curr = curr.next;
+        }
+        return false;
+    }
+}
