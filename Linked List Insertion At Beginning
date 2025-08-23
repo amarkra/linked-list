@@ -1,0 +1,21 @@
+Linked List Insertion At Beginning
+Examples :
+
+Input: x = 6
+     
+Output: 6 -> 1 -> 2 -> 3 -> 4 -> 5
+Explanation: We can see that 6 is inserted at the beginning of the linkedlist.
+
+
+sol/
+
+class Solution {
+    public Node insertAtFront(Node head, int x) {
+        // code here
+        Node newNode = new Node(x);
+        newNode.next=head;
+        head = newNode;
+        return newNode;
+    }
+}
+      
